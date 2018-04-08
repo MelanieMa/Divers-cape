@@ -118,13 +118,10 @@ img {
 
 
 
-.tripadvisor {
-  padding: 3% 25% 3% 25%;
-}
 
 .explination {
   text-align: center;
-  margin: 5%;
+  margin: 7%;
 }
 
 .home2 {
@@ -137,6 +134,21 @@ div.col-sm.imgexi
 .imgexi {
 
   text-align: center;
+}
+
+.tripadvisor {
+  padding: 3% 0% 3% 0%;
+  text-align: center;
+}
+
+#CDSWIDSSP {
+  text-align: center;
+  width: 100% !important;
+padding: 0% 20% 0% 20%;
+}
+
+#CDSWIDSSP.widSSPnarrow .widSSPData .widSSPBranding dd {
+  width: 100% !important;
 }
 
 
@@ -442,6 +454,8 @@ hr {
   background-size: cover;
   background-attachment: fixed;
   height: 450px;
+  width: 100%;
+
   text-align: center;
   padding-top: 3%;
 
