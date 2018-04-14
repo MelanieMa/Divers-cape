@@ -451,10 +451,10 @@ hr {
   height: 450px;
   text-align: center;
   padding-top: 3%;
-}
+  }
 
 .LC {
-  background: url('Images/nice.jpg') no-repeat center;
+  background: url('Images/Sunset2.jpg') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 450px;
