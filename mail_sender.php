@@ -8,8 +8,8 @@ require 'lib/PHPMailer/src/SMTP.php';
 
 if (isset($_POST['email'])) {
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "m.macken@hotmail.nl";
-    
+    $email_to = "dive@diverscape.com";
+
     $name = $_POST['name']; // required
     $email_from = $_POST['email']; // required
     $message = $_POST['message']; // required
@@ -58,7 +58,7 @@ if (isset($_POST['email'])) {
         $mail->isSMTP();                                      // Set mailer to use SMTP
         $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
-        $mail->Username = 'melaniemacken@gmail.com';                 // SMTP username
+        $mail->Username = 'dive@diverscape.com';                 // SMTP username
         $mail->Password = '';                           // SMTP password
         $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 587;                                    // TCP port to connect to
@@ -68,12 +68,12 @@ if (isset($_POST['email'])) {
                 'verify_peer_name' => false,
                 'allow_self_signed' => true
             )
-        );  
+        );
 
         //Recipients
         $mail->setFrom('melaniemacken@gmail.com', 'Mailer');
         $mail->addAddress($email_to);     // Add a recipient
-        $mail->addAddress('melaniemacken@gmail.com');     // Add a recipient
+        $mail->addAddress('dive@diverscape.com');     // Add a recipient
         $mail->addReplyTo($email_from, $name);
 
         //Content
